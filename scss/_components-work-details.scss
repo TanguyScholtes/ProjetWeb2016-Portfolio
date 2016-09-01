@@ -1,0 +1,7 @@
+.external__link{
+    color: $bgOrange;
+
+    &:hover{
+        color: lighten( $bgOrange, 10% );
+    }
+}

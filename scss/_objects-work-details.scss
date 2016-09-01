@@ -1,0 +1,32 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
+    .work-detail__text-wrapper{
+        width: 100%;
+    }
+}
+
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 1280px) {
+    .work-detail__text-wrapper{
+        width: 65%;
+    }
+}
+
+.work-detail{
+    margin: 6em 0 2em 0;
+}
+
+.work-detail__title{
+    margin: 1.5em 0;
+}
+
+.work-detail__image{
+    //min-width: 799px;
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
+
+.work-detail__text-wrapper{
+    margin: 2em auto;
+}

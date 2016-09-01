@@ -1,0 +1,330 @@
+/* Mise à zéro des marges et espacements pour compatibilité entre les navigateurs */
+html * /* Dans un sélecteur, le caractère " " (espace) signifie "tous les descendants" et le caractère "*" signifie "tous les éléments", de sorte que "html *" sélectionne tous les éléments descendants de l'élément html, autrement dit... tout simplement tous les éléments de la page web */
+{
+margin: 0; /* pas de marges par défaut pour aucun élément (ces marges sont de toutes façons différentes en fonction des navigateurs) */
+padding: 0; /* idem pour les espacements (padding) */
+}
+
+/* Marge de gauche par défaut de 20px */
+ul,ol,dl /* Dans un sélecteur : le caractère "," veut dire "et". Donc ici, on sélectionne tous les ul et tous les ol et tous les dl de la page web */
+{
+margin-left: 20px; /* pas de marges... sauf pour les listes, car une liste sans marge ne peut afficher sa puce (pour ul et ol) */
+}
+
+/*------- Mise en forme du bas de page -------*/
+
+div#footer
+{
+text-align: right; /* alignement du contenu à droite */
+padding-top: 20px; /* l'espacement du haut est de 20 pixels */
+padding-right: 20px; /* l'espacement de droite est de 20 pixels */
+color: white;
+font-family: Arial, Helvetica, Verdana, sans-serif;
+margin-left: auto;
+	margin-right: auto;
+	width: 1125px;
+}
+
+div#footer>p:first-child
+{
+float: left;
+padding-left: 20px;
+}
+
+div#footer>p#legal
+{
+	text-align: left;
+	font-size: 12px;
+}
+
+div#footer>p#credits
+{
+	text-align: center;
+	font-size: 10px;
+	color: #3050b0;
+}
+
+div#footer>p#credits a
+{
+	text-decoration: none;
+	color: #3380cc;
+}
+div#footer>p#credits a:hover
+{
+	text-decoration: underline;
+	color: #409fff;
+}
+
+
+/*----------- Body -----------*/
+html
+{
+background-color: black;
+background-image: url('../img/background.jpg'); /* image de fond */
+background-position: top center;
+background-repeat: no-repeat;
+position: relative;
+}
+
+body
+{
+/* centré dans son conteneur */
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px; /* et décalé un peu vers la bas */
+color: rgb(20%,20%,20%); /* couleur des textes en gris foncé */
+}
+
+
+/*----------- règles pour la bannière (titre remplacé) -----------*/
+
+body>h1:first-child 
+{
+margin:auto;
+width: 608px; 
+height: 286px;
+background-image: url("../img/logo-hots.png");
+background-position: center;
+background-repeat: no-repeat;
+}
+body>h1:first-child>a /*ici, le texte est cliquable --> on change le lien dans le h1 : */
+{
+/*celui-ci doit-être rendu en block avec une hauteur correspondant à la hauteur de l'image qui remplace le titre */
+display: block; 
+height: 286px;
+text-indent: 101%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+/*----------- mise en page -----------*/
+
+h2
+{
+text-decoration: none; /* titres non-soulignés */
+color: rgb(102,0,0);
+}
+
+p
+{
+padding: 10px 0px; /* un petit espace entre chaque paragraphe = une hauteur de ligne entre chaque paragraphes */
+line-height: 20px; /* -> une ligne = 20 pixels de hauteur */
+}
+
+
+
+
+/*----------- quelques règles particulières pour les liens -----------*/
+
+a:link, a:visited /* les liens et les liens visités */
+{
+color: rgb(60%,20%,20%); /* sont dans une couleur particularisée */
+}
+
+div#basDePage img
+{
+border: none; /*pas de bords autour des images-liens dans le bas de page (les icônes) */
+}
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+/*-------Menu-------*/
+div#menu
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 2.75em;
+	font-size: 14px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+div#menu ol
+{
+	width: 1125px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background-color: rgba(60,64,138,0.5);
+	border: 1px solid rgba(72,101,193,0.75);
+	padding: 3px;
+}
+
+div#menu li
+{
+	display: inline-block;
+	width: 182px;
+	text-align: center;
+}
+
+div#menu li.selected
+{
+	background-color: rgba(46,19,64,0.75);
+	color: white;
+	border: 1px solid rgba(89,48,126,1);
+}
+
+div#menu a
+{
+	text-decoration : none;
+	display : inline-block;
+	width: 182px;
+	height: 2em;
+	color: rgba(84,140,217,0.75);
+	padding-top: 0.75em;
+	font-weight: bold;
+}
+
+div#menu li.selected a
+{
+	color: white;
+}
+
+div#menu a:hover
+{
+	background-color: rgba(46,19,64,0.75);
+	color: white;
+}
+
+div#menu li:hover
+{
+	border: 1px solid rgba(89,48,126,1);
+}
+
+
+/*-------Headline-------*/
+div#headline
+{
+	width: 800px;
+	height: 367px;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#headline>h2, div#headline>p
+{
+	padding: 10px;
+}
+
+div#headline>h2
+{
+	color: white;
+	text-shadow: 0 0 16px #009CFF;
+	font-size: 64px;
+	font-family: "exo","Myriad Pro",Myriad,Arial,sans-serif;
+	text-align: center;
+}
+div#headline>p
+{
+	margin-top: 1em;
+	color: white;
+	font-size: 18px;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	text-align: center;
+}
+div#headline>p.text
+{
+	background-color: rgba(0,0,0,0.5);
+}
+
+div#headline>p>a.button
+{
+	text-shadow: none;
+	margin-top: 0.5em;
+	width: 333px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	padding: 15px 45px;
+	font-size: 30.4px;
+	text-decoration: none;
+	
+	background-color: #FF9900;
+    background-image: linear-gradient(#FF9900, #FF6600);
+    border: 2px solid #FFB674;
+    box-shadow: 0 0 2em 0.3em rgba(255, 0, 246, 0.4);
+    color: #FFFFFF;
+    display: inline-block;
+	font-family: "exo","Myriad Pro",Myriad,Arial,sans-serif;
+    font-weight: 700;
+}
+
+div#headline>p>a.button:hover
+{
+	background-color: #ff6600;
+	box-shadow: 0 0 2em 0.3em rgba(255,0,246,0.3), 0 0 0.5em #FFFFFF inset;
+	color: #FFFFFF;
+}
+
+/*-------Spécificités-------*/
+
+div#background
+{
+	background-color: black;
+	background-image: url('../img/background-low.jpg'); /* image de fond */
+	background-size: 1940px 661px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 540px;
+}
+
+div#spec
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1125px;
+	position: relative;
+}
+
+div#spec div
+{
+	width: 600px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	font-family: "exo","Myriad Pro",Myriad,Arial,sans-serif;
+}
+
+div#spec div h2
+{
+	color: white;
+	text-shadow: 0 0 16px #009CFF;
+	font-size: 34px;
+	font-family: "exo","Myriad Pro",Myriad,Arial,sans-serif;
+}
+
+div#spec>div#illu
+{
+	background-image: url('../img/HeroesLogo.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 500px;
+	height: 500px;
+	margin: 20px;
+}
+
+div#spec div:hover
+{
+	text-shadow: 0 0 16px #009CFF;
+}
+
+div#spec>div#champ:hover ~ div#illu
+{
+	background-image: url('../img/champ.png');
+}
+div#spec>div#bg:hover ~ div#illu
+{
+	background-image: url('../img/bg.png');
+}
+div#spec>div#skin:hover ~ div#illu
+{
+	background-image: url('../img/skins.png');
+}

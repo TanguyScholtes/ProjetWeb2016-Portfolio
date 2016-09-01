@@ -1,0 +1,39 @@
+.about{
+	border-bottom: 1px solid white;
+}
+
+.about__image{
+    border-radius: 1em;
+    border: 2px solid $bgOrange;
+}
+
+.about__list{
+    list-style-type: none;
+}
+
+.about__list__link{
+    color: $bgDarkOrange;
+    
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.about__list__title{
+    font-weight: bold;
+}
+
+.about__vignette{
+    border: none;
+    background-color: $bgDarkOrange;
+    color: $txtWhite;
+    border-radius: 1em;
+    
+    .about__list__link{
+        color: $txtWhite;
+    }
+    
+    .about__image{
+        border: none;
+    }
+}

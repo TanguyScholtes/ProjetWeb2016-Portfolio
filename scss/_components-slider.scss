@@ -1,0 +1,25 @@
+.carousel, .scene{
+    list-style-type: none;
+}
+
+.carousel__text{
+    color: $txtWhite;
+    text-align: right;
+}
+
+.main-title, .main-subtitle{
+    text-shadow: 3px 3px 2px $shadowMidBlack;
+}
+
+.main-subtitle, .carousel__text__title{
+    color: $bgOrange;
+    font-weight: bold;
+}
+
+.carousel__text__title, .carousel__text__desc{
+    background-color: $shadowDarkBlack;
+    display: inline-block;
+    text-align: right;
+    padding: 0.5em;
+}
+

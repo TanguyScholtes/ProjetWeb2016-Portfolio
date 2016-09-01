@@ -1,0 +1,14 @@
+.work-preview__link{
+    text-decoration: none;
+    color: $bgBlue;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.work-preview__image{    
+    &:hover{
+        opacity: 0.75;
+    }
+}

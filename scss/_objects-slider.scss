@@ -1,0 +1,66 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1279px) {
+    .slider__container{
+        display: none;
+    }
+}
+
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 1280px) {
+    .slider__container{
+        width: 100%;
+        margin: 3.75em auto 0.5em auto;
+    }
+
+    .carousel, .scene{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .scene{
+        position: relative;
+    }
+
+    .carousel__item{
+        width: 100%;
+    }
+
+    .carousel__image{
+        width: 100%;
+    }
+
+    .carousel__text{
+        position: absolute;
+        right: 10%;
+        top: 35%;
+
+        .button{
+            margin: 1em 0;
+        }
+    }
+
+    .main-title{
+        font-size: 4em;
+        right: 10%;
+        top: 5%;
+    }
+
+    .main-subtitle{
+        font-size: 2em;
+        right: 10.5%;
+        top: 45%;
+    }
+
+    .carousel__text__title{
+        font-size: 1.5em;
+        margin: 0;
+        right: 0%;
+        top: -47.5%;
+    }
+
+    .carousel__text__desc{
+        width: 45%;
+        margin: 0;
+    }
+}

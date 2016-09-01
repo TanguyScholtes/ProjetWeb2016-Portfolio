@@ -1,0 +1,33 @@
+.footer__wrapper{
+	background-color: $bgBlack;
+	color: $txtWhite;
+}
+
+.footer__section__list{
+    list-style-type: none;
+}
+
+.footer__section__list-item__title{
+    font-weight: bold;
+}
+
+.footer__section__list__link{
+    color: $txtWhite;
+    text-decoration: underline;
+    
+    &:hover{
+        color: $bgOrange;
+    }
+}
+
+.footer__social{
+    .footer__section__list-item{
+        transition: transform 500ms ease;
+        
+        &:hover{
+            transform: scale(1.2);
+            box-shadow: 2px 2px 5px $shadowBlack;
+            transition: transform 500ms ease;
+        }
+    }
+}

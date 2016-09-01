@@ -1,0 +1,77 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 798px) {
+
+    .menu__list__link{
+        color: $txtWhite;
+        text-decoration: none;
+        transition: background-color 500ms ease, color 500ms ease, border 500ms ease;
+
+        &:hover{
+            background-color: $bgLightBlack;
+            transition: background-color 500ms ease, border 500ms ease;
+            border: 1px solid $bgBlack;
+        }
+    }
+
+    .select{
+        color: $txtWhite;
+        text-decoration: none;
+        background-color: $bgOrange;
+        border: 1px solid $bgOrange;
+
+        &:hover{
+            background-color: $bgOrange;
+            border: 1px solid $bgOrange;
+        }
+    }
+}
+
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 799px) {
+
+    .menu__list__link{
+        color: $txtWhite;
+        text-decoration: none;
+        transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+
+        &:hover{
+            background-color: $bgLightBlack;
+            transition: background-color 500ms ease, color 500ms ease, border-bottom 500ms ease;
+            color: $bgOrange;
+            border-bottom: 3px solid $bgOrange;
+        }
+    }
+
+    .select{
+        color: $txtWhite;
+        text-decoration: none;
+        background-color: $bgLightBlack;
+        color: $bgOrange;
+        border-bottom: 3px solid $bgOrange;
+    }
+}
+
+.header{
+    background-color: $bgBlack;
+    color: $txtWhite;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.site__title{
+    font-weight: bold;
+}
+
+.site__link{
+    color: $txtWhite;
+    text-decoration: none;
+    transition: background 500ms ease;
+    &:hover{
+        color: $txtWhite;
+    }
+}
+
+.site__subtitle{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    color: $bgDarkOrange;
+}

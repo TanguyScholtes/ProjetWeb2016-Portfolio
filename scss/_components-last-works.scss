@@ -1,0 +1,28 @@
+.last-works{
+	border-top: 1px solid $txtGrey;
+}
+
+.work{
+    border: 1px solid $txtGrey;
+    border-radius: 1em;
+}
+
+.work__link{
+    color: $txtBlack;
+    text-decoration: none;
+    
+    &:hover{
+        color: $bgOrange;
+        text-decoration: underline;
+    }
+}
+
+.work__image{
+    opacity: 1;
+    transition: opacity 300ms ease;
+    
+    &:hover{
+        opacity: 0.8;
+        transition: opacity 300ms ease;
+    }
+}

@@ -1,0 +1,21 @@
+$bgWhite: rgba(234,234,234,1);
+$bgRed: rgba(220,65,35,1);
+$bgBlue: rgba(7, 155, 247, 1);
+$bgDarkBlue: rgba(7, 90, 247, 1);
+
+$bgBlack: rgba(32, 32, 32, 1);
+$bgDarkBlack: darken($bgBlack, 10%);
+$bgLightBlack: lighten($bgBlack, 10%);
+
+$bgOrange: rgba(255, 144, 0, 1);
+$bgDarkOrange: darken($bgOrange, 10%);
+$bgLightOrange: lighten($bgOrange, 10%);
+
+$txtGrey: rgba(197,197,197,1);
+$txtWhite: rgba(255,255,255,1);
+$txtBlack: rgba(49,49,49,1);
+
+$shadowBlue: rgba(7, 90, 247, 0.3);
+$shadowBlack: rgba(0, 0, 0, 0.3);
+$shadowMidBlack: rgba(0, 0, 0, 0.5);
+$shadowDarkBlack: rgba(0, 0, 0, 0.8);
